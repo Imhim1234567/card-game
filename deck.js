@@ -11,6 +11,16 @@ class Card{
     this.suit = suit
     this.value = value
   }
+  get numberOfCards() {
+    return this.cards.length
+  }
+  shuffle(){
+    for (let i = this.cards.length - 1; i > 0; i--){
+      const newIndex = Math.floor(Math.random() * (i + 1))
+      const oldlValue this.cards[newIndex]
+      this.cards[i] = oldValue
+    }
+  }
 }
 function freshDeck() {
   return SUITS.flatMap(suit =>{
