@@ -39,3 +39,19 @@ body {
 .player-deck{
   background-color: blue;
 }
+
+.card{
+height: 100%;
+width: 100%;
+border: 1px solid black;
+border-radius: .5rem;
+  
+}
+
+.card::before{
+  
+}
+
+.card::after{
+  
+}
