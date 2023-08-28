@@ -19,7 +19,7 @@ body {
    display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 10px;
+  font-size: 1re,m;
   border-radius: .5rem;
   color: white;
   user-select: none;
@@ -53,10 +53,10 @@ font-size: 4rem;
   
 }
 .card.red{
-  color:red;
+  color: red;
 }
 .card.black{
-  color:black;
+  color: black;
 }
 .card::before,
 .card::after{
