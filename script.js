@@ -1,6 +1,6 @@
 import DECK from './deck.js'
 
-const computerCardSlot = document.querySelector(".computer-card-slot")
+const computerCardSlot = document.querySelector('.computer-card-slot')
 
 const deck = new Deck()
 deck.shuffle()
