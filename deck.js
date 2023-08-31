@@ -35,9 +35,7 @@ class Card{
     cardDiv.dataset.value = `${this.value} ${this.suit}`
     return cardDiv
   }
-      <div class = "card red" data-value = "9 ♥">
-      ♥
-    </div>
+    
    </div>
 
   }
