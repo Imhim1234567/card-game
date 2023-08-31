@@ -1,5 +1,18 @@
 const SUITS = ["♠", "♣", "♥", "♦"]
-const VALUES = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10', "J", "Q", "K"]
+const VALUES = ["A",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9",
+                "10',
+                "J",
+                "Q",
+                "K"
+              ]
 
 export default class Deck {
   constructor(cards = freshDeck()){
@@ -10,7 +23,7 @@ export default class Deck {
   }
 
    shuffle(){
-    for (let i = this.cards.length - 1; i > 0; i--){
+    for (let i = this.numberOfCards - 1; i > 0; i--){
       const newIndex = Math.floor(Math.random() * (i + 1))
       const oldlValue this.cards[newIndex]
       this.cards[i] = oldValue
