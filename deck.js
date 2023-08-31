@@ -5,14 +5,26 @@ export default class Deck {
   constructor(cards = freshDeck()){
     this.cards = cards
   }
+  get numberOfCards() {
+    return this.cards.length
+  }
+
+   shuffle(){
+    for (let i = this.cards.length - 1; i > 0; i--){
+      const newIndex = Math.floor(Math.random() * (i + 1))
+      const oldlValue this.cards[newIndex]
+      this.cards[i] = oldValue
+    }
+  }
 }
+
 class Card{
   constructor(suit, value){
     this.suit = suit
     this.value = value
   }
   get color(){
-    return this.suit === '♣' || this.suit === '♠' ? 'black': 'red'
+    return this.suit === "♣" || this.suit === "♠" ? 'black': 'red'
   }
 
    getHTML(){
@@ -22,22 +34,11 @@ class Card{
     cardDiv.dataset.value = `${this.value} ${this.suit}`
     return cardDiv
   }
-  }
-
-
-  get numberOfCards() {
-    return this.cards.length
-  }
-  shuffle(){
-    for (let i = this.cards.length - 1; i > 0; i--){
-      const newIndex = Math.floor(Math.random() * (i + 1))
-      const oldlValue this.cards[newIndex]
-      this.cards[i] = oldValue
-    }
-  }
 }
+
+
 function freshDeck() {
-  return SUITS.flatMap(suit =>{
+  return SUITS.flatMap(suit => {
     return VALUES.map(value => {
       return new Card(suit, value)
   })
