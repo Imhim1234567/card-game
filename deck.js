@@ -41,6 +41,6 @@ function freshDeck() {
   return SUITS.flatMap(suit => {
     return VALUES.map(value => {
       return new Card(suit, value)
-  })
+   })
   })
 }
