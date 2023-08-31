@@ -28,13 +28,18 @@ class Card{
     return this.suit === '♣' || this.suit === '♠' ? 'black': 'red'
   }
 
-   getHTML(){
+ fgetHTML(){
     const cardDiv = document.createElement("div")
     cardDiv.innerText = this.suit
     cardDiv.classList.add("card", this.color)
     cardDiv.dataset.value = `${this.value} ${this.suit}`
     return cardDiv
   }
+      <div class = "card red" data-value = "9 ♥">
+      ♥
+    </div>
+   </div>
+
   }
 
 
