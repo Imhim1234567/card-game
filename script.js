@@ -9,4 +9,5 @@ deck.shuffle()
   playerDeck
   computerDeck
 }
+
 computerCardSlot.appendChild(deck.cards[0].getHTML())
