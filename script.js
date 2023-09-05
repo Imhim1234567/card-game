@@ -10,4 +10,6 @@ deck.shuffle()
   playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
   computerDeck  new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards))
 }
+console.log(playerDeck)
+console.log(computerDeck)
 computerCardSlot.appendChild(deck.cards[0].getHTML())
