@@ -21,7 +21,7 @@ export default class Deck {
   get numberOfCards() {
     return this.cards.length
   }
-
+// the function shuffles the cards
    shuffle(){
     for (let i = this.numberOfCards - 1; i > 0; i--){
       const newIndex = Math.floor(Math.random() * (i + 1))
@@ -39,7 +39,7 @@ class Card{
   get color(){
     return this.suit === "♣" || this.suit === "♠" ? 'black': 'red'
   }
-
+// this is supposed randomly select a card from the from the array of cards
    getHTML(){
     const cardDiv = document.createElement("div")
     cardDiv.innerText = this.suit
