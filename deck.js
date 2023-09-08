@@ -39,6 +39,7 @@ class Card{
   get color(){
     return this.suit === "♣" || this.suit === "♠" ? 'black': 'red'
   }
+  
 // this is supposed randomly select a card from the from the array of cards
    getHTML(){
     const cardDiv = document.createElement("div")
@@ -47,6 +48,7 @@ class Card{
     cardDiv.dataset.value = `${this.value} ${this.suit}`
     return cardDiv
   }
+   <div class = "card red" data-value = "9♥"></div>
 }
 
 
