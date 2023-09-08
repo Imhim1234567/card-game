@@ -15,5 +15,6 @@ deck.shuffle()
 console.log(playerDeck)
 console.log(computerDeck)
 }
+computerCardSlot.appendChild(deck.cards[0].getHTML())
 
 
