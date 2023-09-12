@@ -2,11 +2,9 @@ import DECK from './deck.js'
 
 const computerCardSlot = document.querySelector('.computer-card-slot')
 const playerCardSlot = document.querySelector('.player-card-slot')
-const computerDeck = document.querySelector('.computer-deck')
-const computerDeck = document.querySelector('.computer-deck')
-const playerDeck = document.querySelector('.player-deck)
-const computerCardSlot = document.querySelector('.computer-card-slot')
-const computerDeck = document.querySelector('.computer-deck')                                          
+const computerDeckElement = document.querySelector('.computer-deck')
+const playerDeckElement = document.querySelector('.player-deck')
+const text = document.querySelector('.text')                                          
 let playerDeck, computerDeck
 
 // function to be able to play the game 
@@ -21,5 +19,16 @@ deck.shuffle()
 cleanBeforeRound()
 }
 
-function cleanBeforeRound()
+function cleanBeforeRound(){
+  computerCardSlot.innerHTML = ''
+  playerCardSlot.innerHTML = ''
+  text.innerText = ''
+  updateDeckCount()
+}
+function updateDeckCount(){
+  computerDeckElement.innerText = computerDeck.numberOfCards
+  playerDeckElement.innerText = playerDeck.numberOfCards
+}
+
+
 
