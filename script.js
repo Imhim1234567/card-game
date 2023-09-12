@@ -1,10 +1,10 @@
 import DECK from './deck.js'
 
-const computerCardSlot = document.querySelector('.computer-card-slot')
-const playerCardSlot = document.querySelector('.player-card-slot')
-const computerDeckElement = document.querySelector('.computer-deck')
-const playerDeckElement = document.querySelector('.player-deck')
-const text = document.querySelector('.text')                                          
+const computerCardSlot = document.querySelector(".computer-card-slot")
+const playerCardSlot = document.querySelector(".player-card-slot")
+const computerDeckElement = document.querySelector(".computer-deck")
+const playerDeckElement = document.querySelector(".player-deck")
+const text = document.querySelector(".text")                                          
 let playerDeck, computerDeck
 
 // function to be able to play the game 
@@ -20,9 +20,9 @@ cleanBeforeRound()
 }
 
 function cleanBeforeRound(){
-  computerCardSlot.innerHTML = ''
-  playerCardSlot.innerHTML = ''
-  text.innerText = ''
+  computerCardSlot.innerHTML = ""
+  playerCardSlot.innerHTML = ""
+  text.innerText = ""
   updateDeckCount()
 }
 function updateDeckCount(){
