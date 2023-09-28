@@ -42,12 +42,14 @@ export default class Deck {
     }
   }
 }
+// shuffles the card deck
 
 class Card {
   constructor(suit, value) {
     this.suit = suit
     this.value = value
   }
+  // creates class for the deck of cards
 
   get color() {
     return this.suit === "♣" || this.suit === "♠" ? "black" : "red"
@@ -69,3 +71,4 @@ function freshDeck() {
     })
   })
 }
+// creates the deck with all the values and suits from above
