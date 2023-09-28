@@ -19,6 +19,7 @@ export default class Deck {
   constructor(cards = freshDeck()) {
     this.cards = cards
   }
+  // creates a deck for any pile of cards
 
   get numberOfCards() {
     return this.cards.length
