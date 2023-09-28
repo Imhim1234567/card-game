@@ -80,3 +80,8 @@ body {
   right: .5rem;
   transform: rotate(180deg);
 }
+.startOver{
+  background-color:black;
+  color:white;
+  border: 1px dotted black;
+}
