@@ -93,7 +93,7 @@ function flipCards() {
     stop = true
   }
 }
-$(".startOver").click(startGame)
+
 
 function updateDeckCount() {
   computerDeckElement.innerText = computerDeck.numberOfCards
