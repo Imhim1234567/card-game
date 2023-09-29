@@ -60,7 +60,7 @@ function cleanBeforeRound() {
   updateDeckCount()
 }
 
-$("startOver).click(cleanBeforeRound())
+$("startOver).click(cleanBeforeRound)
 
 function flipCards() {
   inRound = true
