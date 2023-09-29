@@ -66,7 +66,7 @@ function startOver(){
   
 }
 
-$("startOver).click(startOver)
+$(".startOver").click(startOver)
 
 function flipCards() {
   inRound = true
