@@ -61,10 +61,10 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
- playerDeck.numberOfCards === 26;
- computerDeck.numberOfCards === 26;
+ playerDeck.numberOfCards === "26"
+ computerDeck.numberOfCards === "26"
 
-  $(".startOver").click(startOver)
+  $(".startOver").click(startOver())
   
 }
 
