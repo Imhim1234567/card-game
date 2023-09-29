@@ -35,7 +35,7 @@ document.addEventListener("click", () => {
   } else {
     flipCards()
 
-    if(".startOver")
+  if(".startOver"){
       startOver()
   }
 })
