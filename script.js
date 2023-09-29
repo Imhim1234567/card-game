@@ -61,15 +61,14 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
-  const deck = new Deck()
+ playerDeck.numberOfCards === 26;
+ computerDeck.numberOfCards === 26;
 
-    const deckMidpoint = Math.ceil(deck.numberOfCards / 2)
-  playerDeck = new Deck(deck.cards.slice(0, deckMidpoint))
-  computerDeck = new Deck(deck.cards.slice(deckMidpoint, deck.numberOfCards))
+  $(".startOver").click(startOver)
   
 }
 
-$(".startOver").click(startOver())
+
 
 function flipCards() {
   inRound = true
