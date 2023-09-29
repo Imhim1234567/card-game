@@ -61,8 +61,8 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
- playerDeck.val === 26
- computerDeck.val === 26
+ playerDeck.val() === 26
+ computerDeck.val() === 26
 
   $(".startOver").click(startOver())
   
