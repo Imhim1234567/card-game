@@ -61,7 +61,7 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
-  deck.numberOfCards === "26"
+  const deck = new Deck()
   
   
 }
