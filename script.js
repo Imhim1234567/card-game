@@ -34,6 +34,9 @@ document.addEventListener("click", () => {
     cleanBeforeRound()
   } else {
     flipCards()
+
+    if(".startOver")
+      startOver()
   }
 })
 
@@ -61,13 +64,12 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
- playerDeck === new Deck().val
- computerDeck === new Deck().val
+ playerDeck.numberOfCards === 26
+ computerDeck.numberOfCards === 26
 
  
   
 }
- $(".startOver").click(startOver())
 
 
 
