@@ -72,5 +72,5 @@ function freshDeck() {
   })
 }
 
-$(".startOver").click(freshDeck)
+$(".startOver").click("freshDeck")
 // creates the deck with all the values and suits from above
