@@ -61,12 +61,13 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
- playerDeck === new deck().val
- computerDeck === new deck().val
+ playerDeck === new Deck().val
+ computerDeck === new Deck().val
 
-  $(".startOver").click(startOver())
+ 
   
 }
+ $(".startOver").click(startOver())
 
 
 
