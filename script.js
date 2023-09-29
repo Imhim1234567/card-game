@@ -34,7 +34,7 @@ document.addEventListener("click", () => {
     cleanBeforeRound()
   } else {
     flipCards()
-
+  }
   if(".startOver"){
       startOver()
   }
