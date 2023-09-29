@@ -61,8 +61,8 @@ function cleanBeforeRound() {
 }
 
 function startOver(){
-  playerDeck.numberOfCards == 26;
-  computerDeck.numberOfCards == 26;
+  deck.numberOfCards == 26;
+  
   
 }
 
