@@ -24,7 +24,7 @@ const text = document.querySelector(".text")
 const startOver = document.querySelector(".startOver")
 
 let playerDeck, computerDeck, inRound, stop
-startOverButton.addEventListener("click" , (".startOver") => {
+startOverButton.addEventListener("click" , () => {
  startGame();
 });
                                  
@@ -45,7 +45,7 @@ document.addEventListener("click", () => {
 
 startGame()
 function startGame() {
-  console.log("button clicked")
+
   const deck = new Deck()
   deck.shuffle()
 
