@@ -21,8 +21,13 @@ const playerCardSlot = document.querySelector(".player-card-slot")
 const computerDeckElement = document.querySelector(".computer-deck")
 const playerDeckElement = document.querySelector(".player-deck")
 const text = document.querySelector(".text")
+const startOver = document.querySelector(".startOver")
 
 let playerDeck, computerDeck, inRound, stop
+startOverButton.addEventListener("click" , () => {
+ startGame();
+});
+                                 
 
 document.addEventListener("click", () => {
   if (stop) {
@@ -61,7 +66,7 @@ function cleanBeforeRound() {
   updateDeckCount()
 }
 
-$(".startOver").click(startGame())
+
 
 
 
