@@ -24,7 +24,7 @@ const text = document.querySelector(".text")
 const startOver = document.querySelector(".startOver")
 
 let playerDeck, computerDeck, inRound, stop
-startOverButton.addEventListener("click" , () => {
+startOverButton.addEventListener("click" , (".startOver") => {
  startGame();
 });
                                  
