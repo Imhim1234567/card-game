@@ -61,7 +61,7 @@ function cleanBeforeRound() {
   updateDeckCount()
 }
 
-$(".startOver").click(startGame)
+$(".startOver").click(startGame())
 
 
 
