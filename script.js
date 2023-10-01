@@ -45,6 +45,7 @@ document.addEventListener("click", () => {
 
 startGame()
 function startGame() {
+  console.log("button clicked")
   const deck = new Deck()
   deck.shuffle()
 
