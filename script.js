@@ -35,7 +35,7 @@ document.addEventListener("click", () => {
   } else {
     flipCards()
   }
- 
+
 })
 
 startGame()
@@ -61,7 +61,7 @@ function cleanBeforeRound() {
   updateDeckCount()
 }
 
-$(".startOver).click(startGame)
+$(".startOver").click(startGame)
 
 
 
